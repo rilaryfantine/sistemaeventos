@@ -1,0 +1,8 @@
+CREATE TABLE Eventos
+(
+    id_eventos INT NOT NULL PRIMARY KEY,
+    nome_evento NVARCHAR(100) NULL,
+    data_evento INT NULL,
+    local_evento NVARCHAR(100) NULL,
+    capacidade INT CHECK (capacidade > 0)
+)
