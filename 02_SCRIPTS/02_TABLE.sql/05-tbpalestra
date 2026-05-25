@@ -1,0 +1,10 @@
+DROP TABLE Palestra
+CREATE TABLE Palestra 
+(
+    id_palestra INT PRIMARY KEY IDENTITY,
+    id_evento INT NOT NULL, 
+    titulo NVARCHAR(100) NOT NULL,
+    palestrante NVARCHAR(100) NOT NULL,
+    horario TIME NOT NULL,
+    FOREIGN KEY (id_evento) REFERENCES Evento(id_evento)
+);
