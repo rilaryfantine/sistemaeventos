@@ -5,7 +5,8 @@ CREATE TABLE Eventos
     data_evento INT NULL,
     local_evento NVARCHAR(100) NULL,
     capacidade INT CHECK (capacidade > 0)
-)
+);
+
 CREATE TABLE Participante 
 (
     id_participante INT PRIMARY KEY IDENTITY,
@@ -15,3 +16,15 @@ CREATE TABLE Participante
     data_cadastro DATE DEFAULT GETDATE()
     
 );
+
+CREATE TABLE Inscricao 
+(
+    id_inscricao INT PRIMARY KEY IDENTITY,
+    id_evento INT NOT NULL,
+    id_participante INT NOT NULL,
+    status NVARCHAR(20) CHECK (status IN ('Ativa', 'Cancelada')),
+    data_inscricao DATE DEFAULT GETDATE() ,
+    FOREIGN KEY (id_evento) REFERENCES Evento(id_evento),
+    FOREIGN KEY (id_participante) REFERENCES Participante(id_participante)
+
+)
