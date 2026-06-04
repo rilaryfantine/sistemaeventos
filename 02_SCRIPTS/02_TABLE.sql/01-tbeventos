@@ -2,7 +2,7 @@ CREATE TABLE Evento
 (
     id_evento INT NOT NULL PRIMARY KEY,
     nome_evento NVARCHAR(100) NULL,
-    data_evento INT NULL,
+    data_evento DATE NOT NULL,
     local_evento NVARCHAR(100) NULL,
     capacidade INT CHECK (capacidade > 0)
 );
