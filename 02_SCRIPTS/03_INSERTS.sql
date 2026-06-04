@@ -1,1 +1,28 @@
-
+INSERT INTO Evento
+(id_evento, nome_evento, data_evento, local_evento, capacidade)
+VALUES
+(1,'Tech Summit 2026','2026-01-15','São Paulo',500),
+(2,'Dev Conference','2026-02-10','Campinas',300),
+(3,'Data Day','2026-03-05','Santos',250),
+(4,'Cloud Expo','2026-03-20','São Paulo',600),
+(5,'AI Experience','2026-04-12','Ribeirão Preto',400),
+(6,'Java Week','2026-04-25','Sorocaba',200),
+(7,'Python Connect','2026-05-10','São José dos Campos',350),
+(8,'Frontend Summit','2026-05-22','São Paulo',450),
+(9,'Backend Forum','2026-06-05','Campinas',280),
+(10,'Cyber Security Day','2026-06-18','Santos',320),
+(11,'UX Design Fest','2026-07-01','São Paulo',220),
+(12,'Mobile Dev Event','2026-07-15','Guarulhos',300),
+(13,'Startup Weekend','2026-08-08','Campinas',500),
+(14,'Hackathon SP','2026-08-20','São Paulo',700),
+(15,'Big Data Conference','2026-09-03','Santos',450),
+(16,'IoT Meeting','2026-09-18','Sorocaba',250),
+(17,'Game Dev Summit','2026-10-02','São Paulo',350),
+(18,'Digital Innovation','2026-10-16','Campinas',400),
+(19,'Machine Learning Day','2026-11-01','São José dos Campos',380),
+(20,'Cloud Native Event','2026-11-14','São Paulo',420),
+(21,'Women in Tech','2026-11-28','Guarulhos',300),
+(22,'Open Source Festival','2026-12-05','Campinas',450),
+(23,'Tech Leaders Forum','2026-12-10','São Paulo',500),
+(24,'Future of AI','2026-12-15','Santos',550),
+(25,'Encerramento Tech 2026','2026-12-20','São Paulo',600);
