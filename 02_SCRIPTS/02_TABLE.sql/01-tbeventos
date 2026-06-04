@@ -51,3 +51,12 @@ CREATE TABLE Palestra
     horario TIME NOT NULL,
     FOREIGN KEY (id_evento) REFERENCES Evento(id_evento)
 );
+DROP TABLE Log_Auditoria
+CREATE TABLE Log_Auditoria 
+(
+    id_log INT PRIMARY KEY IDENTITY,
+    acao NVARCHAR(50) NOT NULL,
+    tabela_afetada NVARCHAR(50) NOT NULL,
+    usuario NVARCHAR(50),
+    data_hora DATETIME DEFAULT GETDATE()
+);
