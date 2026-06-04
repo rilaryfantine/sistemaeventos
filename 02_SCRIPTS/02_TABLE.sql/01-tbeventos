@@ -1,6 +1,6 @@
-CREATE TABLE Eventos
+CREATE TABLE Evento
 (
-    id_eventos INT NOT NULL PRIMARY KEY,
+    id_evento INT NOT NULL PRIMARY KEY,
     nome_evento NVARCHAR(100) NULL,
     data_evento INT NULL,
     local_evento NVARCHAR(100) NULL,
