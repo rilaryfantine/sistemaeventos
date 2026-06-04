@@ -6,3 +6,12 @@ CREATE TABLE Eventos
     local_evento NVARCHAR(100) NULL,
     capacidade INT CHECK (capacidade > 0)
 )
+CREATE TABLE Participante 
+(
+    id_participante INT PRIMARY KEY IDENTITY,
+    nome NVARCHAR(100) NOT NULL, 
+    email NVARCHAR(100) UNIQUE NOT NULL,
+    telefone NVARCHAR(20),
+    data_cadastro DATE DEFAULT GETDATE()
+    
+);
