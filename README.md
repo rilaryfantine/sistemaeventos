@@ -1,3 +1,30 @@
+
+Sistema de Gestão de Eventos
+
+Projeto acadêmico desenvolvido utilizando SQL Server com foco em modelagem e administração de banco de dados.
+
+Objetivo
+
+Automatizar o gerenciamento de eventos, inscrições, faturamento e auditoria de operações.
+
+Funcionalidades
+
+* Controle de participantes
+* Controle de capacidade dos eventos
+* Geração de faturas
+* Auditoria de operações
+* Procedures
+* Functions
+* Triggers
+* Views
+* Consultas avançadas
+
+Tecnologias
+
+* SQL Server
+* T-SQL
+
+
 Modelo Obrigatório do README.txt
 ALUNO: Rilary Fantine Lima Gomes
 
